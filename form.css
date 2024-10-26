@@ -49,6 +49,9 @@ button{
     border-radius: 10px;
     background-color: yellow;
 }
+button:hover{
+    background-color:purple;
+}
 .OR{
     display: flex;
     margin-top: 10px;
