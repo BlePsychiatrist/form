@@ -1,62 +1,75 @@
-body{
-    background-color: grey;
-    margin: auto;
+body {
+    background-image: radial-gradient(rgba(189, 154, 167, 0.432), #fff, #4f2a46);
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
+
 .body-content {
     background-color: beige;
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: fit-content;
-    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+    margin-top: 10px;
 }
-.form-content{
+
+.form-content {
     display: grid;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto;
     padding: 30px;
 }
-.form{
+
+.form {
     display: grid;
-    grid-template-rows: auto auto;
+   
 }
-.text-input{
-    margin: 10px;
-    padding: 15px;
+.text-input {
+    margin: 8px;
+    padding: 10px;
     border-radius: 10px;
     border-style: solid;
     border-color: grey;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.parent{
+
+.parent {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.parent h2{
+
+.parent h2 {
     font-weight: 700;
 }
-.nod{
+
+.nod {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
 }
-.forgot{
+
+.forgot {
     margin-left: 30%;
 }
-button{
-    padding: 15px;
+
+button {
+    padding: 10px;
     border-radius: 10px;
-    background-color: yellow;
+    background-color: rgb(82, 51, 82);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
 }
-button:hover{
-    background-color: blueviolet;
+
+button:hover {
+    background-color: gray;
 }
-.OR{
+
+.OR {
     display: flex;
-    margin-top: 10px;
+    margin-top: 8px;
 }
-.google{
+
+.google {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -65,19 +78,30 @@ button:hover{
     text-align: center;
     border-radius: 10px;
     width: full;
-}
-.google img{
-    width: 50px;
-}
-.acc{
-   display: flex;
-   flex-wrap: wrap ; 
-justify-content: center;
-justify-items: center;
-align-items: center;
+    height: 50px;
 }
 
- @media only screen and (max-width: 768px) {
-    .body-content {width: 200px; float: left;}
-    .form-content {margin-left: 216px;}
+.google img {
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+
+.acc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .body-content {
+        flex-direction: column;
+        background-color: blanchedalmond;
+    }
+
+    .form-content {
+        width: full;
+    }
 }
